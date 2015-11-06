@@ -1,0 +1,439 @@
+/*variables*/
+
+@primary-color: #c8c6c8;
+@secondary-color: #4a484c;
+@tertiary-color: #010001;
+@invert-color: #fff;
+
+@taekwondo-color: #53a7b2;
+@jiujitsu-color: #f98654;
+@muaythai-color: #aed24e;
+@taefit-color: #a27db1;
+@yoga-color: #a8777b;
+@pilates-color: #03acec;
+
+@kids-color: #4da9b4;
+@feminina-color: #ec2393;
+@aulas-color: #a05849;
+
+@img: "../images/";
+
+/*-------mixins------*/
+.border-radius( @a: 5px ) {
+  -webkit-border-radius: @a;
+  -moz-border-radius: @a;
+  border-radius: @a;
+}
+.transition( @a: all .1s ease ) {
+  -webkit-transition: @a;
+  transition: @a;
+}
+/*-------mixins------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  border-top: 5px solid @primary-color;
+  color: @secondary-color;
+  font: 15px 'Muli', sans-serif;
+  margin: 0 auto;
+  //max-width: 1800px;
+  max-width: 1260px;
+  &:before {
+    background: @tertiary-color;
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  list-style: none;
+}
+a {
+  .transition();
+  text-decoration: none;
+}
+nav {
+  display: inline-block;
+}
+h2 {
+  margin: 0 0 20px;
+}
+.main {
+  margin: 0 auto;
+  width: 97%;
+}
+/*-------header------*/
+header {
+  margin: 20px 0;
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15%;
+  }
+  nav {
+    margin: 0 10%;
+    width: 50%;
+    ul {
+      display: flex;
+      padding-left: 30px;
+      position: relative;
+      a {
+        color: @tertiary-color;
+        display: block;
+        text-transform: uppercase;
+        &:before {
+            .transition();
+            background: @tertiary-color;
+            bottom: -15px;
+            content: "";
+            height: 5px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+        &:hover {
+          color: @primary-color;
+        }
+      }
+      li:not(:first-child) {
+        flex: 1;
+        position: relative;
+        text-align: center;
+      }
+      li:nth-child(3) a:before {
+        background: @secondary-color;
+      }
+      li:nth-child(4) a:before {
+        background: darken(@primary-color, 10%);
+      }
+      li:nth-child(5) a:before {
+        background: @primary-color;
+      }
+      >:first-child {
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 13px;
+        width: 23px;
+        a {
+          background: url( "@{img}sprite.png") -3px -2px;
+          text-indent: -500px;
+        }
+      }
+    }
+  }
+  .social {
+    display: inline-block;
+    width: 14%;
+  }
+}
+
+.social {
+  a {
+    background: url("@{img}social-sprite.png");
+    display: block;
+    height: 27px;
+        margin: 0 5px;
+    overflow: hidden;
+    text-indent: -500px;
+    width: 20px;
+  }
+  .facebook a {
+    background-position: -6px -3px;
+  }
+  .twitter a {
+    background-position: -44px -3px;
+  }
+  .vine a {
+    background-position: -80px -3px;
+  }
+  .youtube a {
+    background-position: -114px -3px;
+  }
+}
+
+/*-------footer------*/
+footer {
+  margin-top: 40px;
+  a {
+    color: @invert-color;
+    text-transform: uppercase;
+    &:hover {
+      color: darken(@invert-color, 20);
+    }
+  }
+  >div {
+    padding: 20px 40px;
+  }
+  .logo {
+    display: inline-block;
+    width: 13%;
+  }
+  nav {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0 0 11%;
+    width: 75%;
+    >ul {
+      display: flex;
+      >li {
+        flex: 1;
+        vertical-align: top;
+        li {
+          display: block;
+          margin: 9px 0;
+          position: relative;
+          text-indent: 13px;
+          &:before {
+            .border-radius(50%);
+            background: @invert-color;
+            content: "";
+            height: 6px;
+            left: 0;
+            margin-top: -3px;
+            position: absolute;
+            top: 50%;
+            width: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  .social {
+    margin-top: 20px;
+    a {
+      height: 29px;
+      width: 29px;
+    }
+    .facebook a {
+      background-position: 2px -30px;
+    }
+    .twitter a {
+      background-position: -44px -31px;
+    }
+    .vine a {
+      background-position: -89px -31px;
+    }
+    .youtube a {
+      background-position: -134px -30px;
+    }
+  }
+}
+.main-footer {
+  background: @secondary-color;
+  border: 1px solid @tertiary-color;
+}
+.secondary-footer {
+  background: @primary-color;
+  color: lighten(@secondary-color, 20%);
+  margin-top: 10px;
+  text-align: center;
+  address {
+    font-style: normal;
+  }
+  span {
+    display: block;
+  }
+}
+/*-------footer------*/
+
+
+/*------home--------*/
+.banner-menu {
+  margin: 40px 0;
+  position: relative;
+  text-align: center;
+  ul {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    li {
+      bottom: -88%;
+      flex: 1;
+      pointer-events: none;
+      position: relative;
+      &:before {
+        content: "";
+        height: 5px;
+        left: 0;
+        position: absolute;
+        top: -88%;
+        width: 100%;
+      }
+      a {
+        color: @invert-color;
+        display: block;
+        margin: 0 2px;
+        padding: 10px;
+        pointer-events: auto;
+        text-transform: uppercase;
+      }
+      &:first-child a {
+        margin-left: 0;
+      }
+    }
+    .taekwon-do {
+      &:before {
+        background: @taekwondo-color;
+      }
+      a {
+        background: @taekwondo-color;
+        &:hover {
+          background: lighten(@taekwondo-color, 10%);
+        }
+      }
+    }
+    .jiu-jitsu {
+      &:before {
+        background: @jiujitsu-color;
+      }
+      a {
+        background: @jiujitsu-color;
+        &:hover {
+          background: lighten(@jiujitsu-color, 10%);
+        }
+      }
+    }
+    .muay-thai {
+      &:before {
+        background: @muaythai-color;
+      }
+      a {
+        background: @muaythai-color;
+        &:hover {
+          background: lighten(@muaythai-color, 10%);
+        }
+      }
+    }
+    .taefit {
+      &:before {
+        background: @taefit-color;
+      }
+      a {
+        background: @taefit-color;
+        &:hover {
+          background: lighten(@taefit-color, 10%);
+        }
+      }
+    }
+    .yoga {
+      &:before {
+        background: @yoga-color;
+      }
+      a {
+        background: @yoga-color;
+        &:hover {
+          background: lighten(@yoga-color, 10%);
+        }
+      }
+    }
+    .pilates {
+      &:before {
+        background: @pilates-color;
+      }
+      a {
+        background: @pilates-color;
+        &:hover {
+          background: lighten(@pilates-color, 10%);
+        }
+      }
+    }
+  }
+}
+aside {
+  display: inline-block;
+  width: 25%;
+}
+.articles {
+  display: inline-block;
+  width: 74%;
+  vertical-align: top;
+  ul {
+    display: flex;
+    width: 100%;
+    li {
+      flex: 1;
+      margin-left: 20px;
+      h2 {
+        text-transform: uppercase;
+      }
+      span {
+        color: @secondary-color;
+        display: block;
+        font-size: 17px;
+        line-height: 1.5;
+        position: relative;
+        &::before {
+          content: "";
+          display: block;
+          height: 10px;
+          margin: -4px 0 20px;
+          pointer-events: none;
+          width: 100%;
+        }
+        &::after {
+          content: "+";
+          font-size: 45px;
+          position: absolute;
+          right: 0;
+          top: 15px;
+        }
+      }
+      &.kids {
+        h2 {
+          color: @kids-color;
+        }
+        span {
+          &:before {
+            background: @kids-color;
+          }
+          &::after {
+            color: @kids-color;
+          }
+        }
+      }
+      &.feminina {
+        h2 {
+          color: @feminina-color;
+        }
+        span {
+          &:before {
+            background: @feminina-color;
+          }
+          &::after {
+            color: @feminina-color;
+          }
+        }
+      }
+      &.grades-de-aula {
+        h2 {
+          color: @aulas-color;
+        }
+        span {
+          &:before {
+            background: @aulas-color;
+          }
+          &::after {
+            color: @aulas-color;
+          }
+        }
+      }
+    }
+  }
+}
