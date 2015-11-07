@@ -514,3 +514,50 @@ aside {
     }
   }
 }
+
+/*-------GRADE DE AULAS--------*/
+.classes {
+  position: relative;
+  img {
+    border: 5px solid @secondary-color;
+  }
+  ul {
+    bottom: 5%;
+    color: @invert-color;
+    padding: 0 10%;
+    position: absolute;
+    width: 100%;
+    li {
+      background: rgba( 0, 0, 0, .8 );
+      cursor: pointer;
+      border-top: 10px solid;
+      margin: 15px 3%;
+      padding: 20px;
+      width: 27%;
+      &:hover {
+        background: rgba( 0, 0, 0, .9 );
+      }
+      h2 {
+        font-weight: normal;
+      }
+      &.taekwon-do {
+        border-color: @taekwondo-color;
+      }
+      &.jiu-jitsu {
+        border-color: @jiujitsu-color;
+      }
+      &.muay-thai {
+        border-color: @muaythai-color;
+      }
+      &.taefit {
+        border-color: @taefit-color;
+      }
+      &.yoga {
+        border-color: @yoga-color;
+      }
+      &.pilates {
+        border-color: @pilates-color;
+      }
+    }
+  }
+}

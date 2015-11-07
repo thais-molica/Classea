@@ -449,3 +449,49 @@ aside {
 .podium li .content .btn:hover {
   background: #4a484c;
 }
+/*-------GRADE DE AULAS--------*/
+.classes {
+  position: relative;
+}
+.classes img {
+  border: 5px solid #4a484c;
+}
+.classes ul {
+  bottom: 5%;
+  color: #ffffff;
+  padding: 0 10%;
+  position: absolute;
+  width: 100%;
+}
+.classes ul li {
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  border-top: 10px solid;
+  margin: 15px 3%;
+  padding: 20px;
+  width: 27%;
+}
+.classes ul li:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+.classes ul li h2 {
+  font-weight: normal;
+}
+.classes ul li.taekwon-do {
+  border-color: #53a7b2;
+}
+.classes ul li.jiu-jitsu {
+  border-color: #f98654;
+}
+.classes ul li.muay-thai {
+  border-color: #aed24e;
+}
+.classes ul li.taefit {
+  border-color: #a27db1;
+}
+.classes ul li.yoga {
+  border-color: #a8777b;
+}
+.classes ul li.pilates {
+  border-color: #03acec;
+}
