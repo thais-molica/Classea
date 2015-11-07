@@ -1,3 +1,14 @@
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('font/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+       url('font/CenturyGothic.woff') format('woff'),
+       url('font/CenturyGothic.ttf')  format('truetype'),
+       url('font/CenturyGothic.svg#CenturyGothic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*variables*/
 
 @primary-color: #c8c6c8;
@@ -36,7 +47,7 @@
 body {
   border-top: 5px solid @primary-color;
   color: @secondary-color;
-  font: 15px 'Muli', sans-serif;
+  font: 15px 'CenturyGothic', sans-serif;
   margin: 0 auto;
   //max-width: 1800px;
   max-width: 1260px;
@@ -71,7 +82,7 @@ nav {
 h2 {
   margin: 0 0 20px;
 }
-.main {
+.container {
   margin: 0 auto;
   width: 97%;
 }
@@ -84,43 +95,41 @@ header {
     width: 15%;
   }
   nav {
-    margin: 0 10%;
-    width: 50%;
+    margin: 0 6%;
+    width: 60%;
     ul {
       display: flex;
       padding-left: 30px;
       position: relative;
       a {
-        color: @tertiary-color;
         display: block;
-        text-transform: uppercase;
-        &:before {
-            .transition();
-            background: @tertiary-color;
-            bottom: -15px;
-            content: "";
-            height: 5px;
-            left: 0;
-            position: absolute;
-            width: 100%;
-        }
-        &:hover {
-          color: @primary-color;
-        }
       }
       li:not(:first-child) {
         flex: 1;
         position: relative;
         text-align: center;
+        a {
+          border-bottom: 5px solid @tertiary-color;
+          color: @tertiary-color;
+          padding: 10px 0;
+          text-transform: uppercase;
+          &:hover {
+            background: @tertiary-color;
+            color: @invert-color;
+          }
+        }
       }
-      li:nth-child(3) a:before {
-        background: @secondary-color;
+      li:nth-child(3) a {
+        border-color: @secondary-color;
       }
-      li:nth-child(4) a:before {
-        background: darken(@primary-color, 10%);
+      li:nth-child(4) a {
+        border-color: darken(@primary-color, 20%);
       }
-      li:nth-child(5) a:before {
-        background: @primary-color;
+      li:nth-child(5) a {
+        border-color: darken(@primary-color, 10%);
+      }
+      li:nth-child(6) a {
+        border-color: @primary-color;
       }
       >:first-child {
         left: 0;
@@ -137,7 +146,7 @@ header {
   }
   .social {
     display: inline-block;
-    width: 14%;
+    width: 11%;
   }
 }
 
@@ -432,6 +441,74 @@ aside {
           &::after {
             color: @aulas-color;
           }
+        }
+      }
+    }
+  }
+}
+/*-----PODIUM------*/
+.podium {
+  li {
+    background: lighten(@primary-color, 20);
+    margin: 30px 1%;
+    padding: 20px;
+    text-transform: uppercase;
+    width: 47%;
+    h2 {
+      background: @primary-color;
+      font-size: 18px;
+      margin: -50px auto 20px;
+      padding: 5px;
+      position: relative;
+      text-align: center;
+      width: 50%;
+      &:before,
+      &:after {
+        border: 33px solid transparent;
+        border-bottom: 31px solid @primary-color;
+        color: @primary-color;
+        content: "";
+        height: 0;
+        position: absolute;
+        top: -33px;
+        width: 0;
+      }
+      &:before {
+        left: -33px;
+      }
+      &:after {
+        right: -33px;
+      }
+    }
+    .img-wrapper {
+      display: inline-block;
+      width: 50%;
+    }
+    .content {
+      float: right;
+      width: 45%;
+      time {
+        border-bottom: 1px solid @primary-color;
+        color: @primary-color;
+        display: block;
+        font-size: 14px;
+        text-align: right;
+        >:first-child {
+          float: left;
+        }
+      }
+      p {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .btn {
+        display: block;
+        background: @tertiary-color;
+        color: @invert-color;
+        padding: 5px;
+        text-align: center;
+        &:hover {
+          background: @secondary-color;
         }
       }
     }
