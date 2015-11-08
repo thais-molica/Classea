@@ -1,10 +1,10 @@
 
 @font-face {
   font-family: 'CenturyGothic';
-  src: url('font/CenturyGothic.eot?#iefix') format('embedded-opentype'),
-       url('font/CenturyGothic.woff') format('woff'),
-       url('font/CenturyGothic.ttf')  format('truetype'),
-       url('font/CenturyGothic.svg#CenturyGothic') format('svg');
+  src: url('../font/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+       url('../font/CenturyGothic.woff') format('woff'),
+       url('../font/CenturyGothic.ttf')  format('truetype'),
+       url('../font/CenturyGothic.svg#CenturyGothic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -85,6 +85,25 @@ h2 {
 .container {
   margin: 0 auto;
   width: 97%;
+}
+.stripped-table {
+  font: 14px Arial, sans-serif;
+  th {
+    background: @tertiary-color;
+    color:  @invert-color;
+    font-weight: normal;
+    padding: 10px 0;
+    text-align: left;
+    text-indent: 10px;
+    text-transform: uppercase;
+  }
+  td {
+    background: lighten(@primary-color, 10);
+    text-align: center;
+  }
+  tr:nth-child(odd) td {
+    background: @primary-color;
+  }
 }
 /*-------header------*/
 header {
@@ -528,36 +547,94 @@ aside {
     position: absolute;
     width: 100%;
     li {
-      background: rgba( 0, 0, 0, .8 );
+      background: url( "@{img}sprite-grade-de-aula.png") no-repeat rgba( 0, 0, 0, .8 );
       cursor: pointer;
       border-top: 10px solid;
       margin: 15px 3%;
       padding: 20px;
       width: 27%;
       &:hover {
-        background: rgba( 0, 0, 0, .9 );
+        background-color: rgba( 0, 0, 0, .9 );
       }
       h2 {
         font-weight: normal;
       }
       &.taekwon-do {
         border-color: @taekwondo-color;
+        background-position: 100% 0;
       }
       &.jiu-jitsu {
         border-color: @jiujitsu-color;
+        background-position: 100% 17.3%;
       }
       &.muay-thai {
         border-color: @muaythai-color;
+        background-position: 100% 35%;
       }
       &.taefit {
         border-color: @taefit-color;
+        background-position: 100% 57%;
       }
       &.yoga {
         border-color: @yoga-color;
+        background-position: 100% 78.2%;
       }
       &.pilates {
         border-color: @pilates-color;
+        background-position: 100% 95%;
       }
     }
   }
+}
+.modal {
+  background: rgba( 0, 0, 0, .8 );
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  .close {
+    background: none;
+    border: none;
+    float: right;
+    font-size: 21px;
+    line-height: .5;
+    outline: none;
+    &:hover {
+      color: @primary-color;
+    }
+  }
+  .content {
+    .transition( all .5s ease );
+    background: @invert-color;
+    margin: 0 auto;
+    padding: 20px;
+    width: 40%;
+    table {
+      width: 100%;
+    }
+  }
+  &.in .content {
+    margin: 10% auto;
+  }
+  &.taekwon-do .content {
+    border-top: 10px solid @taekwondo-color;
+  }
+  &.jiu-jitsu .content {
+    border-top: 10px solid @jiujitsu-color;
+  }
+  &.muay-thai .content {
+    border-top: 10px solid @muaythai-color;
+  }
+  &.taefit .content {
+    border-top: 10px solid @taefit-color;
+  }
+  &.yoga .content {
+    border-top: 10px solid @yoga-color;
+  }
+  &.pilates .content {
+    border-top: 10px solid @pilates-color;
+  }
+
 }

@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'CenturyGothic';
-  src: url('font/CenturyGothic.eot?#iefix') format('embedded-opentype'), url('font/CenturyGothic.woff') format('woff'), url('font/CenturyGothic.ttf') format('truetype'), url('font/CenturyGothic.svg#CenturyGothic') format('svg');
+  src: url('../font/CenturyGothic.eot?#iefix') format('embedded-opentype'), url('../font/CenturyGothic.woff') format('woff'), url('../font/CenturyGothic.ttf') format('truetype'), url('../font/CenturyGothic.svg#CenturyGothic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -51,6 +51,25 @@ h2 {
 .container {
   margin: 0 auto;
   width: 97%;
+}
+.stripped-table {
+  font: 14px Arial, sans-serif;
+}
+.stripped-table th {
+  background: #010001;
+  color: #ffffff;
+  font-weight: normal;
+  padding: 10px 0;
+  text-align: left;
+  text-indent: 10px;
+  text-transform: uppercase;
+}
+.stripped-table td {
+  background: #e1e0e1;
+  text-align: center;
+}
+.stripped-table tr:nth-child(odd) td {
+  background: #c8c6c8;
 }
 /*-------header------*/
 header {
@@ -464,7 +483,7 @@ aside {
   width: 100%;
 }
 .classes ul li {
-  background: rgba(0, 0, 0, 0.8);
+  background: url("../images/sprite-grade-de-aula.png") no-repeat rgba(0, 0, 0, 0.8);
   cursor: pointer;
   border-top: 10px solid;
   margin: 15px 3%;
@@ -472,26 +491,84 @@ aside {
   width: 27%;
 }
 .classes ul li:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .classes ul li h2 {
   font-weight: normal;
 }
 .classes ul li.taekwon-do {
   border-color: #53a7b2;
+  background-position: 100% 0;
 }
 .classes ul li.jiu-jitsu {
   border-color: #f98654;
+  background-position: 100% 17.3%;
 }
 .classes ul li.muay-thai {
   border-color: #aed24e;
+  background-position: 100% 35%;
 }
 .classes ul li.taefit {
   border-color: #a27db1;
+  background-position: 100% 57%;
 }
 .classes ul li.yoga {
   border-color: #a8777b;
+  background-position: 100% 78.2%;
 }
 .classes ul li.pilates {
   border-color: #03acec;
+  background-position: 100% 95%;
+}
+.modal {
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal .close {
+  background: none;
+  border: none;
+  float: right;
+  font-size: 21px;
+  line-height: .5;
+  outline: none;
+}
+.modal .close:hover {
+  color: #c8c6c8;
+}
+.modal .content {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 20px;
+  width: 40%;
+}
+.modal .content table {
+  width: 100%;
+}
+.modal.in .content {
+  margin: 10% auto;
+}
+.modal.taekwon-do .content {
+  border-top: 10px solid #53a7b2;
+}
+.modal.jiu-jitsu .content {
+  border-top: 10px solid #f98654;
+}
+.modal.muay-thai .content {
+  border-top: 10px solid #aed24e;
+}
+.modal.taefit .content {
+  border-top: 10px solid #a27db1;
+}
+.modal.yoga .content {
+  border-top: 10px solid #a8777b;
+}
+.modal.pilates .content {
+  border-top: 10px solid #03acec;
 }
