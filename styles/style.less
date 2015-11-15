@@ -638,3 +638,83 @@ aside {
   }
 
 }
+/*------CONTATO----------*/
+.contact {
+  position: relative;
+  .form-box {
+    background: @secondary-color;
+    color: @invert-color;
+    padding: 20px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 30%;
+  }
+}
+/*-----MODALIDADES-------*/
+.main.modalities {
+  .banner-menu {
+    ul {
+      height: auto;
+      li:before {
+        display: none;
+      }
+    }
+    .info {
+      color: @invert-color;
+      left: 0;
+      padding: 60px;
+      position: absolute;
+      text-align: left;
+      top: 0;
+      h1 {
+        font-size: 60px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+      button {
+        border: none;
+        color: @invert-color;
+        right: 60px;
+        padding: 10px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 70px;
+      }
+      .box {
+        background: rgba(0, 0, 0, .8);
+        padding: 30px;
+        .column {
+          display: inline-block;
+          padding: 0 30px;
+          width: 49%;
+        }
+        h2 {
+          font-size: 24px;
+          text-transform: uppercase;
+        }
+        .benefits {
+          background: #cccccd;
+          color: @secondary-color;
+          padding: 20px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+      .calories-spent {
+        color: @invert-color;
+      }
+    }
+  }
+}
+.jiu-jitsu .banner-menu .info {
+  h1 {
+    color: @jiujitsu-color;
+  }
+  button {
+    background: @jiujitsu-color;
+  }
+  .calories-spent span {
+    background: @jiujitsu-color;
+  }
+}

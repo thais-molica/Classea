@@ -572,3 +572,77 @@ aside {
 .modal.pilates .content {
   border-top: 10px solid #03acec;
 }
+/*------CONTATO----------*/
+.contact {
+  position: relative;
+}
+.contact .form-box {
+  background: #4a484c;
+  color: #ffffff;
+  padding: 20px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 30%;
+}
+/*-----MODALIDADES-------*/
+.main.modalities .banner-menu ul {
+  height: auto;
+}
+.main.modalities .banner-menu ul li:before {
+  display: none;
+}
+.main.modalities .banner-menu .info {
+  color: #ffffff;
+  left: 0;
+  padding: 60px;
+  position: absolute;
+  text-align: left;
+  top: 0;
+}
+.main.modalities .banner-menu .info h1 {
+  font-size: 60px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.main.modalities .banner-menu .info button {
+  border: none;
+  color: #ffffff;
+  right: 60px;
+  padding: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 70px;
+}
+.main.modalities .banner-menu .info .box {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+}
+.main.modalities .banner-menu .info .box .column {
+  display: inline-block;
+  padding: 0 30px;
+  width: 49%;
+}
+.main.modalities .banner-menu .info .box h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.main.modalities .banner-menu .info .box .benefits {
+  background: #cccccd;
+  color: #4a484c;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main.modalities .banner-menu .info .calories-spent {
+  color: #ffffff;
+}
+.jiu-jitsu .banner-menu .info h1 {
+  color: #f98654;
+}
+.jiu-jitsu .banner-menu .info button {
+  background: #f98654;
+}
+.jiu-jitsu .banner-menu .info .calories-spent span {
+  background: #f98654;
+}
