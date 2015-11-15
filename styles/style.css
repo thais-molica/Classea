@@ -271,6 +271,7 @@ footer .social .youtube a {
 .banner-menu ul li a {
   color: #ffffff;
   display: block;
+  font-size: 26px;
   margin: 0 2px;
   padding: 10px;
   pointer-events: auto;
