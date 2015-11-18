@@ -6,7 +6,7 @@
        url('../font/CenturyGothic.ttf')  format('truetype'),
        url('../font/CenturyGothic.svg#CenturyGothic') format('svg');
   font-weight: normal;
-  font-style: normal; 
+  font-style: normal;
 }
 
 /*variables*/
@@ -80,7 +80,11 @@ nav {
   display: inline-block;
 }
 h2 {
+  font-weight: normal;
   margin: 0 0 20px;
+}
+h1 {
+  font-weight: normal;
 }
 .container {
   margin: 0 auto;
@@ -663,19 +667,23 @@ aside {
     }
     .info {
       color: @invert-color;
-      left: 0;
+      left: 2.5%;
       padding: 60px;
       position: absolute;
       text-align: left;
       top: 0;
+      width: 95%;
       h1 {
         font-size: 60px;
         margin: 0;
+        text-shadow: -2px 4px 2px rgba(2, 4, 0, .75);
         text-transform: uppercase;
       }
       button {
         border: none;
         color: @invert-color;
+        cursor: pointer;
+        font-size: 20px;
         right: 60px;
         padding: 10px;
         position: absolute;
@@ -688,6 +696,7 @@ aside {
         .column {
           display: inline-block;
           padding: 0 30px;
+          vertical-align: top;
           width: 49%;
         }
         h2 {
@@ -697,25 +706,86 @@ aside {
         .benefits {
           background: #cccccd;
           color: @secondary-color;
-          padding: 20px;
+          font-size: 16px;
+          padding: 10px 20px;
           text-align: center;
           text-transform: uppercase;
         }
       }
       .calories-spent {
         color: @invert-color;
+        span {
+          background: url("@{img}sprite.png") no-repeat;
+          display: inline-block;
+          font-size: 26px;
+          height: 80px;
+          margin-bottom: 20px;
+          padding: 10px 20px 10px 70px;
+          text-align: center;
+          width: 45%;
+          em {
+            display: block;
+            font-style: normal;
+            text-align: center;
+          }
+        }
+        .time {
+          background-position: 0 -44px;
+        }
+        .calories {
+          background-position: 0 -163px;
+          float: right;
+          margin-left: 20px;
+          position: relative;
+          &:before {
+            content: "=";
+            font-size: 24px;
+            left: -15%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
       }
     }
   }
+  .gallery {
+    padding-left: 60px;
+    position: relative;
+    h2 {
+      color: @invert-color;
+      left: -30px;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 40px;
+      width: 120px;
+    }
+  }
 }
-.jiu-jitsu .banner-menu .info {
-  h1 {
-    color: @jiujitsu-color;
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.jiu-jitsu.main.modalities {
+  .banner-menu .info {
+    h1 {
+      color: @jiujitsu-color;
+    }
+    button {
+      background: @jiujitsu-color;
+      &:hover {
+        background: lighten(@jiujitsu-color, 5);
+      }
+    }
+    .calories-spent span {
+      background-color: @jiujitsu-color;
+    }
   }
-  button {
-    background: @jiujitsu-color;
-  }
-  .calories-spent span {
+  .gallery h2 {
     background: @jiujitsu-color;
   }
 }

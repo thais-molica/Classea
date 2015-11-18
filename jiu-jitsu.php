@@ -49,6 +49,46 @@
 					<?php include 'menu_modalidades.php'; ?>
 				</section>
 
+				<section class="gallery">
+					<h2>Galeria de <strong>Imagens</strong></h2>
+					<ul id="owl-demo">
+
+						<li class="item"><img src="images/galeria/jiu-jitsu1.png" alt="Jiu-Jitsu 1"></li>
+					  <li class="item"><img src="images/galeria/jiu-jitsu2.png" alt="Jiu-Jitsu 2"></li>
+					  <li class="item"><img src="images/galeria/jiu-jitsu3.png" alt="Jiu-Jitsu 3"></li>
+						<li class="item"><img src="images/galeria/jiu-jitsu1.png" alt="Jiu-Jitsu 1"></li>
+						<li class="item"><img src="images/galeria/jiu-jitsu2.png" alt="Jiu-Jitsu 2"></li>
+						<li class="item"><img src="images/galeria/jiu-jitsu3.png" alt="Jiu-Jitsu 3"></li>
+						<li class="item"><img src="images/galeria/jiu-jitsu1.png" alt="Jiu-Jitsu 1"></li>
+					  <li class="item"><img src="images/galeria/jiu-jitsu2.png" alt="Jiu-Jitsu 2"></li>
+					  <li class="item"><img src="images/galeria/jiu-jitsu3.png" alt="Jiu-Jitsu 3"></li>
+
+					</ul>
+				</section>
+
+				<section class="our-team">
+					<h2>Nossa equipe de Jiu-jitsu</h2>
+					<ul>
+						<li>
+							<img src="images/professor-classea.jpg" alt="Professor Classe A">
+							<h2>Professor Classe A TKD</h2>
+							<p>Lorem ipsum dolor sit amet,
+								consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+						</li>
+						<li>
+							<img src="images/professor-classea.jpg" alt="Professor Classe A">
+							<h2>Professor Classe A TKD</h2>
+							<p>Lorem ipsum dolor sit amet,
+								consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+						</li>
+						<li>
+							<img src="images/professor-classea.jpg" alt="Professor Classe A">
+							<h2>Professor Classe A TKD</h2>
+							<p>Lorem ipsum dolor sit amet,
+								consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+						</li>
+					</ul>
+				</section>
 
 
 			</main>

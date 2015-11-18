@@ -27,8 +27,17 @@ var modal = function () {
 $( document ).ready( function () {
   modal();
 
+  $("#owl-demo").owlCarousel({
+
+      items : 3,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3],
+      navigation: true
+
+  });
+
   //Contato
-  $( "button", "#contact-form" ).on( " click", function () {
+  /*$( "button", "#contact-form" ).on( " click", function () {
     var form = $( "#contact-form" ),
         name = form.find( "#name" ),
         subject = form.find( "#subject" ),
@@ -76,5 +85,5 @@ $( document ).ready( function () {
       modal.show().addClass( "in" );
     }
 
-  } ) ;
+  } ) ;*/
 } ) ;
