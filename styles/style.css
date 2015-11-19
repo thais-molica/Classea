@@ -681,16 +681,120 @@ aside {
   transform: translateY(-50%);
 }
 .main.modalities .gallery {
-  padding-left: 60px;
+  margin-bottom: 50px;
+  padding-left: 110px;
   position: relative;
 }
 .main.modalities .gallery h2 {
+  background: url("../images/galeria.png") no-repeat 79% center;
   color: #ffffff;
-  left: -30px;
-  transform: rotate(-90deg);
+  left: -80px;
+  font-size: 18px;
+  height: 70px;
+  padding: 12px 40px;
   position: absolute;
-  top: 40px;
-  width: 120px;
+  transform: rotate(-90deg);
+  top: 82px;
+  width: 232px;
+}
+.main.modalities .gallery h2:before {
+  bottom: 10px;
+  border: 20px solid transparent;
+  border-bottom: 20px solid;
+  content: "";
+  right: -20px;
+  position: absolute;
+}
+.main.modalities .gallery h2 strong {
+  display: block;
+}
+.main.modalities .gallery .content {
+  background: #d8d8d8;
+}
+.main.modalities .gallery.photo .content {
+  padding: 10px 90px;
+}
+.main.modalities .gallery.photo .owl-carousel .owl-pagination {
+  display: none;
+}
+.main.modalities .gallery.photo .owl-carousel .owl-controls {
+  left: 0;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 100%;
+}
+.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-prev {
+  background: none;
+  left: 30px;
+  position: absolute;
+}
+.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-prev:before {
+  border: 10px solid transparent;
+  border-right: 10px solid #d8d8d8;
+  content: "";
+  float: left;
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  z-index: 1;
+}
+.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-prev:after {
+  border: 14px solid transparent;
+  border-right: 14px solid #fff;
+  content: "";
+  float: left;
+  height: 0;
+  left: -6px;
+  position: absolute;
+  top: -1px;
+  width: 0;
+}
+.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-next {
+  background: none;
+  right: 30px;
+  position: absolute;
+}
+.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-next:before {
+  border: 10px solid transparent;
+  border-left: 10px solid #d8d8d8;
+  content: "";
+  float: left;
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  z-index: 1;
+}
+.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+  border: 14px solid transparent;
+  border-left: 14px solid #fff;
+  content: "";
+  float: left;
+  height: 0;
+  right: -6px;
+  position: absolute;
+  top: -1px;
+  width: 0;
+}
+.main.modalities .gallery.video h2 {
+  left: -140px;
+  top: 143px;
+  width: 355px;
+}
+.main.modalities .gallery.video .content {
+  padding: 10px 50px;
+}
+.main.modalities .gallery.video .content:before,
+.main.modalities .gallery.video .content:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main.modalities .gallery.video .content li {
+  float: left;
+  margin: 10px 8px;
 }
 #owl-demo .item {
   margin: 3px;
@@ -699,6 +803,31 @@ aside {
   display: block;
   width: 100%;
   height: auto;
+}
+.our-team > h2 {
+  background: #a4aeb9;
+  border-bottom: 10px solid #e4e4e4;
+  font-size: 18px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.our-team ul li {
+  background: #464646;
+  margin: 0 0 0 4.6%;
+  width: 30%;
+}
+.our-team ul li img {
+  vertical-align: top;
+}
+.our-team ul li .content {
+  color: #ffffff;
+  display: inline-block;
+  float: right;
+  padding: 5px;
+  width: 50%;
+}
+.our-team ul > :first-child {
+  margin-left: 0;
 }
 .jiu-jitsu.main.modalities .banner-menu .info h1 {
   color: #f98654;
@@ -713,5 +842,8 @@ aside {
   background-color: #f98654;
 }
 .jiu-jitsu.main.modalities .gallery h2 {
-  background: #f98654;
+  background-color: #f98654;
+}
+.jiu-jitsu.main.modalities .gallery h2:before {
+  border-bottom-color: #f98654;
 }

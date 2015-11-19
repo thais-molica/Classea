@@ -32,7 +32,8 @@ $( document ).ready( function () {
       items : 3,
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3],
-      navigation: true
+      navigation: true,
+      navigationText: false
 
   });
 

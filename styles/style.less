@@ -750,25 +750,164 @@ aside {
     }
   }
   .gallery {
-    padding-left: 60px;
+    margin-bottom: 50px;
+    padding-left: 110px;
     position: relative;
     h2 {
+      background: url("@{img}galeria.png") no-repeat 79% center;
       color: @invert-color;
-      left: -30px;
-      transform: rotate(-90deg);
+      left: -80px;
+      font-size: 18px;
+      height: 70px;
+      padding: 12px 40px;
       position: absolute;
-      top: 40px;
-      width: 120px;
+      transform: rotate(-90deg);
+      top: 82px;
+      width: 232px;
+      &:before {
+        bottom: 10px;
+        border: 20px solid transparent;
+        border-bottom: 20px solid;
+        content: "";
+        right: -20px;
+        position: absolute;
+      }
+      strong {
+        display: block;
+      }
+    }
+    .content {
+      background: #d8d8d8;
+    }
+    &.photo {
+      .content {
+        padding: 10px 90px;
+      }
+      .owl-carousel {
+        .owl-pagination {
+          display: none;
+        }
+        .owl-controls {
+          left: 0;
+          position: absolute;
+          transform: translateY(-50%);
+          top: 50%;
+          width: 100%;
+          .owl-prev {
+            background: none;
+            left: 30px;
+            position: absolute;
+            &:before {
+              border: 10px solid transparent;
+              border-right: 10px solid #d8d8d8;
+              content: "";
+              float: left;
+              height: 0;
+              left: 0;
+              position: absolute;
+              width: 0;
+              z-index: 1;
+            }
+            &:after {
+              border: 14px solid transparent;
+              border-right: 14px solid #fff;
+              content: "";
+              float: left;
+              height: 0;
+              left: -6px;
+              position: absolute;
+              top: -1px;
+              width: 0;
+            }
+          }
+          .owl-next {
+            background: none;
+            right: 30px;
+            position: absolute;
+            &:before {
+              border: 10px solid transparent;
+              border-left: 10px solid #d8d8d8;
+              content: "";
+              float: left;
+              height: 0;
+              left: 0;
+              position: absolute;
+              width: 0;
+              z-index: 1;
+            }
+            &:after {
+              border: 14px solid transparent;
+              border-left: 14px solid #fff;
+              content: "";
+              float: left;
+              height: 0;
+              right: -6px;
+              position: absolute;
+              top: -1px;
+              width: 0;
+            }
+          }
+        }
+      }
+    }
+    &.video {
+      h2 {
+        left: -140px;
+        top: 143px;
+        width: 355px;
+      }
+      .content {
+        padding: 10px 50px;
+        &:before,
+        &:after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        li {
+          float: left;
+          margin: 10px 8px;
+        }
+      }
     }
   }
 }
-#owl-demo .item{
+#owl-demo .item {
   margin: 3px;
 }
-#owl-demo .item img{
+#owl-demo .item img {
   display: block;
   width: 100%;
   height: auto;
+}
+.our-team {
+  >h2 {
+    background: #a4aeb9;
+    border-bottom: 10px solid #e4e4e4;
+    font-size: 18px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+  }
+  ul{
+    li {
+      background: #464646;
+      margin: 0 0 0 4.6%;
+      width: 30%;
+      img {
+        vertical-align: top;
+      }
+      .content {
+        color: @invert-color;
+        display: inline-block;
+        float: right;
+        padding: 5px;
+        width: 50%;
+      }
+    }
+    >:first-child {
+      margin-left: 0;
+    }
+  }
 }
 .jiu-jitsu.main.modalities {
   .banner-menu .info {
@@ -786,6 +925,9 @@ aside {
     }
   }
   .gallery h2 {
-    background: @jiujitsu-color;
+    background-color: @jiujitsu-color;
+    &:before {
+      border-bottom-color: @jiujitsu-color;
+    }
   }
 }

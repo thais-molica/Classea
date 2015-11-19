@@ -49,9 +49,9 @@
 					<?php include 'menu_modalidades.php'; ?>
 				</section>
 
-				<section class="gallery">
+				<section class="gallery photo">
 					<h2>Galeria de <strong>Imagens</strong></h2>
-					<ul id="owl-demo">
+					<ul id="owl-demo" class="content">
 
 						<li class="item"><img src="images/galeria/jiu-jitsu1.png" alt="Jiu-Jitsu 1"></li>
 					  <li class="item"><img src="images/galeria/jiu-jitsu2.png" alt="Jiu-Jitsu 2"></li>
@@ -66,26 +66,53 @@
 					</ul>
 				</section>
 
+				<section class="gallery video">
+					<h2>Galeria de <strong>Videos</strong></h2>
+					<ul class="content">
+						<li>
+						<iframe width="520" height="312" src="https://www.youtube.com/embed/j3-F6DcGUsk" frameborder="0" allowfullscreen></iframe>
+						</li>
+						<li>
+						<iframe width="222" height="145" src="https://www.youtube.com/embed/j3-F6DcGUsk" frameborder="0" allowfullscreen></iframe>
+						</li>
+						<li>
+						<iframe width="222" height="145" src="https://www.youtube.com/embed/j3-F6DcGUsk" frameborder="0" allowfullscreen></iframe>
+						</li>
+						<li>
+						<iframe width="222" height="145" src="https://www.youtube.com/embed/j3-F6DcGUsk" frameborder="0" allowfullscreen></iframe>
+						</li>
+						<li>
+						<iframe width="222" height="145" src="https://www.youtube.com/embed/j3-F6DcGUsk" frameborder="0" allowfullscreen></iframe>
+						</li>
+					</ul>
+				</section>
+
 				<section class="our-team">
 					<h2>Nossa equipe de Jiu-jitsu</h2>
 					<ul>
 						<li>
 							<img src="images/professor-classea.jpg" alt="Professor Classe A">
-							<h2>Professor Classe A TKD</h2>
-							<p>Lorem ipsum dolor sit amet,
-								consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+							<div class="content">
+								<h2>Professor <strong>Classe A TKD</strong></h2>
+								<p>Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+							</div>
 						</li>
 						<li>
 							<img src="images/professor-classea.jpg" alt="Professor Classe A">
-							<h2>Professor Classe A TKD</h2>
-							<p>Lorem ipsum dolor sit amet,
-								consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+							<div class="content">
+								<h2>Professor <strong>Classe A TKD</strong></h2>
+								<p>Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+							</div>
 						</li>
 						<li>
 							<img src="images/professor-classea.jpg" alt="Professor Classe A">
-							<h2>Professor Classe A TKD</h2>
-							<p>Lorem ipsum dolor sit amet,
-								consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+							<div class="content">
+								<h2>Professor <strong>Classe A TKD</strong></h2>
+								<p>Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. </p>
+							</div>
 						</li>
 					</ul>
 				</section>
