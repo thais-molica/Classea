@@ -5,21 +5,21 @@
 
 		<?php include 'assets.php'; ?>
 
-		<title>Jiu-jitsu - Classe A</title>
+		<title>Pilates - Classe A</title>
 	</head>
 	<body>
 		<div class="container">
 
 			<?php include 'header.php'; ?>
 
-			<main class="main modalities jiu-jitsu">
+			<main class="main modalities pilates">
 
 				<section class="banner-menu">
 					<div class="content">
 						<img src="images/jiu-jitsu.jpg">
 						<div class="info">
-						<h1>Jiu-jitsu</h1>
-						<button class="activate-modal" data-target="jiu-jitsu">Grade de aulas</button>
+						<h1>Pilates</h1>
+						<button class="activate-modal" data-target="pilates">Grade de aulas</button>
 						<div class="box">
 							<div class="column">
 								<h2>LOREM IPSUM DOLOR IS EFECT</h2>
@@ -124,6 +124,6 @@
 			<?php include 'footer.php'; ?>
 		</div>
 
-		<?php include 'modal-jiu-jitsu.php'; ?>
+		<?php include 'modal-pilates.php'; ?>
 	</body>
 </html>

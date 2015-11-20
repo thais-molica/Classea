@@ -500,6 +500,7 @@ aside {
 }
 .classes ul li h2 {
   font-weight: normal;
+  margin: 30px 0;
 }
 .classes ul li.taekwon-do {
   border-color: #53a7b2;
@@ -846,4 +847,94 @@ aside {
 }
 .jiu-jitsu.main.modalities .gallery h2:before {
   border-bottom-color: #f98654;
+}
+.taekwon-do.main.modalities .banner-menu .info h1 {
+  color: #53a7b2;
+}
+.taekwon-do.main.modalities .banner-menu .info button {
+  background: #53a7b2;
+}
+.taekwon-do.main.modalities .banner-menu .info button:hover {
+  background: #65b0ba;
+}
+.taekwon-do.main.modalities .banner-menu .info .calories-spent span {
+  background-color: #53a7b2;
+}
+.taekwon-do.main.modalities .gallery h2 {
+  background-color: #53a7b2;
+}
+.taekwon-do.main.modalities .gallery h2:before {
+  border-bottom-color: #53a7b2;
+}
+.muay-thai.main.modalities .banner-menu .info h1 {
+  color: #aed24e;
+}
+.muay-thai.main.modalities .banner-menu .info button {
+  background: #aed24e;
+}
+.muay-thai.main.modalities .banner-menu .info button:hover {
+  background: #b7d762;
+}
+.muay-thai.main.modalities .banner-menu .info .calories-spent span {
+  background-color: #aed24e;
+}
+.muay-thai.main.modalities .gallery h2 {
+  background-color: #aed24e;
+}
+.muay-thai.main.modalities .gallery h2:before {
+  border-bottom-color: #aed24e;
+}
+.taefit.main.modalities .banner-menu .info h1 {
+  color: #a27db1;
+}
+.taefit.main.modalities .banner-menu .info button {
+  background: #a27db1;
+}
+.taefit.main.modalities .banner-menu .info button:hover {
+  background: #ad8dbb;
+}
+.taefit.main.modalities .banner-menu .info .calories-spent span {
+  background-color: #a27db1;
+}
+.taefit.main.modalities .gallery h2 {
+  background-color: #a27db1;
+}
+.taefit.main.modalities .gallery h2:before {
+  border-bottom-color: #a27db1;
+}
+.yoga.main.modalities .banner-menu .info h1 {
+  color: #a8777b;
+}
+.yoga.main.modalities .banner-menu .info button {
+  background: #a8777b;
+}
+.yoga.main.modalities .banner-menu .info button:hover {
+  background: #b2878a;
+}
+.yoga.main.modalities .banner-menu .info .calories-spent span {
+  background-color: #a8777b;
+}
+.yoga.main.modalities .gallery h2 {
+  background-color: #a8777b;
+}
+.yoga.main.modalities .gallery h2:before {
+  border-bottom-color: #a8777b;
+}
+.pilates.main.modalities .banner-menu .info h1 {
+  color: #03acec;
+}
+.pilates.main.modalities .banner-menu .info button {
+  background: #03acec;
+}
+.pilates.main.modalities .banner-menu .info button:hover {
+  background: #0dbafc;
+}
+.pilates.main.modalities .banner-menu .info .calories-spent span {
+  background-color: #03acec;
+}
+.pilates.main.modalities .gallery h2 {
+  background-color: #03acec;
+}
+.pilates.main.modalities .gallery h2:before {
+  border-bottom-color: #03acec;
 }
