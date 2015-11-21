@@ -170,6 +170,22 @@ header {
   .social {
     display: inline-block;
     width: 11%;
+    a {
+      height: 27px;
+      width: 20px;
+    }
+    .facebook a {
+      background-position: -6px -3px;
+    }
+    .twitter a {
+      background-position: -44px -3px;
+    }
+    .vine a {
+      background-position: -80px -3px;
+    }
+    .youtube a {
+      background-position: -114px -3px;
+    }
   }
 }
 
@@ -177,23 +193,23 @@ header {
   a {
     background: url("@{img}social-sprite.png");
     display: block;
-    height: 27px;
-        margin: 0 5px;
+    height: 29px;
+    margin: 0 5px;
     overflow: hidden;
     text-indent: -500px;
-    width: 20px;
+    width: 29px;
   }
   .facebook a {
-    background-position: -6px -3px;
+    background-position: 2px -30px;
   }
   .twitter a {
-    background-position: -44px -3px;
+    background-position: -44px -31px;
   }
   .vine a {
-    background-position: -80px -3px;
+    background-position: -89px -31px;
   }
   .youtube a {
-    background-position: -114px -3px;
+    background-position: -134px -30px;
   }
 }
 
@@ -247,22 +263,6 @@ footer {
 
   .social {
     margin-top: 20px;
-    a {
-      height: 29px;
-      width: 29px;
-    }
-    .facebook a {
-      background-position: 2px -30px;
-    }
-    .twitter a {
-      background-position: -44px -31px;
-    }
-    .vine a {
-      background-position: -89px -31px;
-    }
-    .youtube a {
-      background-position: -134px -30px;
-    }
   }
 }
 .main-footer {
@@ -655,8 +655,132 @@ aside {
     right: 30px;
     top: 30px;
     width: 30%;
+    h2,
+    legend {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    .social {
+      margin-bottom: 30px;
+    }
+    address {
+      margin-bottom: 30px;
+      span {
+        display: block;
+        font-size: 12px;
+        font-style: normal;
+        em {
+          display: inline-block;
+          font-style: normal;
+          padding-right: 10px;
+          margin: 5px 0;
+          width: 100px;
+          &:after {
+            content: ":";
+            float: right;
+          }
+        }
+      }
+    }
+    fieldset {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    label {
+      display: block;
+      margin: 10px 0;
+      position: relative;
+      span {
+        left: 10px;
+        position: absolute;
+        top: 10px;
+      }
+    }
+    input,
+    textarea {
+      background: #5e6168;
+      border: none;
+      width: 100%;
+    }
+    input {
+      height: 40px;
+    }
+    textarea {
+      height: 90px;
+    }
+    button {
+      background: @invert-color;
+      border: none;
+      color: #656870;
+      float: right;
+      font-size: 18px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      &:hover {
+        background: darken(@invert-color, 10);
+      }
+    }
   }
 }
+.alert{
+  border:1px solid #f00!important;
+}
+
+
+#shadow{
+  background:#000;
+  display:none;
+  position:fixed;
+  left:0px;
+  height:100%;
+  opacity:0.8;
+  top:0px;
+  width:100%;
+  z-index:1000;
+}
+
+#shadow .text_line01{
+  position:absolute;
+  left:50%;
+  margin-left:-230px;
+  height:205px;
+  overflow:hidden;
+}
+
+#shadow .text_line02{
+  color:#fff;
+  font-size:20px;
+  position:absolute;
+  left:50%;
+  margin-left:-35px;
+  top:210px;
+  font-family:verdana;
+}
+
+#send,
+#notsend,
+#alert_box{
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border:1px solid #ccc;
+  background:#fff;
+  color:#000;
+  display:none;
+  font-family:Arial;
+  font-size:20px;
+  left:50%;
+  margin-left:-251px;
+  padding:20px 10px;
+  position:fixed;
+  text-align:center;
+  text-transform:uppercase;
+  top:200px;
+  width:500px;
+  z-index:1001;
+}
+
 /*-----MODALIDADES-------*/
 .main.modalities {
   .banner-menu {

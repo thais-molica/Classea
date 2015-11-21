@@ -138,26 +138,42 @@ header .social {
   display: inline-block;
   width: 11%;
 }
+header .social a {
+  height: 27px;
+  width: 20px;
+}
+header .social .facebook a {
+  background-position: -6px -3px;
+}
+header .social .twitter a {
+  background-position: -44px -3px;
+}
+header .social .vine a {
+  background-position: -80px -3px;
+}
+header .social .youtube a {
+  background-position: -114px -3px;
+}
 .social a {
   background: url("../images/social-sprite.png");
   display: block;
-  height: 27px;
+  height: 29px;
   margin: 0 5px;
   overflow: hidden;
   text-indent: -500px;
-  width: 20px;
+  width: 29px;
 }
 .social .facebook a {
-  background-position: -6px -3px;
+  background-position: 2px -30px;
 }
 .social .twitter a {
-  background-position: -44px -3px;
+  background-position: -44px -31px;
 }
 .social .vine a {
-  background-position: -80px -3px;
+  background-position: -89px -31px;
 }
 .social .youtube a {
-  background-position: -114px -3px;
+  background-position: -134px -30px;
 }
 /*-------footer------*/
 footer {
@@ -211,22 +227,6 @@ footer nav > ul > li li:before {
 }
 footer .social {
   margin-top: 20px;
-}
-footer .social a {
-  height: 29px;
-  width: 29px;
-}
-footer .social .facebook a {
-  background-position: 2px -30px;
-}
-footer .social .twitter a {
-  background-position: -44px -31px;
-}
-footer .social .vine a {
-  background-position: -89px -31px;
-}
-footer .social .youtube a {
-  background-position: -134px -30px;
 }
 .main-footer {
   background: #4a484c;
@@ -590,6 +590,124 @@ aside {
   right: 30px;
   top: 30px;
   width: 30%;
+}
+.contact .form-box h2,
+.contact .form-box legend {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.contact .form-box .social {
+  margin-bottom: 30px;
+}
+.contact .form-box address {
+  margin-bottom: 30px;
+}
+.contact .form-box address span {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+}
+.contact .form-box address span em {
+  display: inline-block;
+  font-style: normal;
+  padding-right: 10px;
+  margin: 5px 0;
+  width: 100px;
+}
+.contact .form-box address span em:after {
+  content: ":";
+  float: right;
+}
+.contact .form-box fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.contact .form-box label {
+  display: block;
+  margin: 10px 0;
+  position: relative;
+}
+.contact .form-box label span {
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+.contact .form-box input,
+.contact .form-box textarea {
+  background: #5e6168;
+  border: none;
+  width: 100%;
+}
+.contact .form-box input {
+  height: 40px;
+}
+.contact .form-box textarea {
+  height: 90px;
+}
+.contact .form-box button {
+  background: #ffffff;
+  border: none;
+  color: #656870;
+  float: right;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.contact .form-box button:hover {
+  background: #e6e6e6;
+}
+.alert {
+  border: 1px solid #f00!important;
+}
+#shadow {
+  background: #000;
+  display: none;
+  position: fixed;
+  left: 0px;
+  height: 100%;
+  opacity: 0.8;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+#shadow .text_line01 {
+  position: absolute;
+  left: 50%;
+  margin-left: -230px;
+  height: 205px;
+  overflow: hidden;
+}
+#shadow .text_line02 {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  top: 210px;
+  font-family: verdana;
+}
+#send,
+#notsend,
+#alert_box {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #000;
+  display: none;
+  font-family: Arial;
+  font-size: 20px;
+  left: 50%;
+  margin-left: -251px;
+  padding: 20px 10px;
+  position: fixed;
+  text-align: center;
+  text-transform: uppercase;
+  top: 200px;
+  width: 500px;
+  z-index: 1001;
 }
 /*-----MODALIDADES-------*/
 .main.modalities .banner-menu ul {

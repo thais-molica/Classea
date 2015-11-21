@@ -38,53 +38,84 @@ $( document ).ready( function () {
   });
 
   //Contato
-  /*$( "button", "#contact-form" ).on( " click", function () {
-    var form = $( "#contact-form" ),
-        name = form.find( "#name" ),
-        subject = form.find( "#subject" ),
-        message = form.find( "textarea" ),
-        toCorrect = [],
-        valid = true;
+  	/*valida��o de email*/
+  	$( "#send-btn", "#contact-form" ).click( function() {
 
-    var check = function ( input ) {
+  		if( $( "input#name" ).val() == "" ) {
 
-      var text = input.siblings( "span" ).text().replace( ":", "");
-      if ( input.val().length == 0 ) {
+  			$( "input#name" ).addClass( 'alert' );
+  			$( "input#name" ).focus();
+  			$( '#alert_box' ).html( 'Por favor insira seu nome' );
+  			$( '#alert_box' ).show();
 
-        valid = false;
-        input.addClass( "error");
-        toCorrect.push( text ) ;
+
+  		} else if ( $( "input#subject" ).val() == "" ) {
+
+        $( "input#subject" ).addClass( 'alert' );
+        $( "input#subject" ).focus();
+        $( '#alert_box' ).html( 'Por favor insira um assunto' );
+  			$( '#alert_box' ).show();
+
+  		} else if ( $( "textarea" ).val() == "" ) {
+
+        $( "textarea" ).addClass( 'alert' );
+        $( "textarea" ).focus();
+        $( '#alert_box' ).html( 'Por favor insira sua mensagem' );
+        $( '#alert_box' ).show();
 
       } else {
+  				$( '#shadow' ).fadeIn( function() {
+  					 enviarRegistro();
+  				} ) ;
+  			}
 
-        input.removeClass( "error");
-        if ( toCorrect.indexOf( text ) > 1 ) {
-          toCorrect.splice( text, 1 );
-        }
+  	} ) ;
 
-      }
-    }
 
-    check( name );
-    check( subject );
-    check( message );
+  	//remove o destaque de alerta as inputs
+  	$('input, textarea').click( function() {
+  		$(this).removeClass('alert');
+  		$('#alert_box').hide();
+  	});
 
-    if ( !valid ) {
-      var modal = $( "#error-modal" ),
-          content;
+  	//envio
+  	function enviarRegistro() {
+  		$.post( "send.php", {
+  			nome:$( "input#name" ).val(),
+  			email:$( "input#subject" ).val(),
+  			mensagem:$( "textarea#message" ).val()
+  		},
 
-      if ( modal.length == 0 ) {
-        $( "body" ).append( "<div class='modal' id='error-modal'><div class='content'><h2>Por favor, corrija os campos abaixo:</h2><ul></ul></div></div>" );
-      }
+  		function( respondeEdition ){
+  			if( respondeEdition == 500 ) {
+  				$('input').val('');
+  				$('textarea').val('');
+  				$('#shadow p').fadeOut(function(){
+  					$('#send').fadeIn();
+  					$('#send').fadeIn();
+  					$('#shadow').click(function(){
+  							$('#send').fadeOut(function(){
+  								$('#shadow').fadeOut();
+  					  		});
+  					  	});
+  					 });
+  				}else if (respondeEdition == 400){
+  					$('#shadow p').fadeOut(function(){
+  						$('#notsend').fadeIn();
+  						$('#shadow').click(function(){
+  					 		$('#notsend').fadeOut(function(){
+  					  			$('#shadow').fadeOut();
+  					  		});
+  					 });
+  				});
+  			}
+  		});
+  	}
 
-      for ( var i in toCorrect ) {
-        content += "<li>" + toCorrect[i] + "</li>";
-        console.log(toCorrect[i])
-      }
+  	// o botao com o id enviar enviar o formulario
+  	/*$('#send-btn').click(function(){
+  		$('#contact-form').submit();
+  	});*/
 
-      $( "ul", modal ).html( content );
-      modal.show().addClass( "in" );
-    }
 
-  } ) ;*/
 } ) ;
