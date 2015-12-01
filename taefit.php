@@ -33,7 +33,7 @@
 									Vivamus venenatis sem eu metus elementum.</p>
 							</div>
 							<div class="column">
-								<h2>CALORIAS GASTA COM JIU-JITSU</h2>
+								<h2>CALORIAS GASTA COM Taefit</h2>
 								<div class="calories-spent">
 									<span class="time"><em>60</em> minutos</span>
 									<span class="calories"><em>720</em> Kall/h</span>
