@@ -10,11 +10,11 @@
 }
 @font-face {
 	font-family: 'icon';
-	src:url('../fonts/icomoon.eot?7bdlzk');
-	src:url('../fonts/icomoon.eot?7bdlzk#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?7bdlzk') format('truetype'),
-		url('../fonts/icomoon.woff?7bdlzk') format('woff'),
-		url('../fonts/icomoon.svg?7bdlzk#icomoon') format('svg');
+	src:url('../font/icomoon.eot?7bdlzk');
+	src:url('../font/icomoon.eot?7bdlzk#iefix') format('embedded-opentype'),
+		url('../font/icomoon.ttf?7bdlzk') format('truetype'),
+		url('../font/icomoon.woff?7bdlzk') format('woff'),
+		url('../font/icomoon.svg?7bdlzk#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -44,12 +44,12 @@
 @news-icon: "\e904";
 @podium-icon: "\e905";
 
-.icon-facebook:before {
+/*.icon-facebook:before {
 	content: "\e902";
 }
 .icon-home:before {
 	content: "\e903";
-}
+}*/
 
 .icon-twitter:before {
 	content: "\e906";
@@ -348,6 +348,7 @@ footer {
   ul {
     display: flex;
     height: 100%;
+    margin-left: 0.08%;
     position: absolute;
     top: 0;
     width: 100%;
@@ -535,6 +536,16 @@ aside {
     padding: 20px;
     text-transform: uppercase;
     width: 47%;
+    &.podium-item {
+      h2 i::before {
+        content: @podium-icon;
+      }
+    }
+    &.news-item {
+      h2 i::before {
+        content: @news-icon;
+      }
+    }
     a {
       color: @secondary-color;
       &:hover p {
@@ -565,6 +576,9 @@ aside {
       }
       &:after {
         right: -33px;
+      }
+      i::before {
+        .font-icon();
       }
     }
     .img-wrapper {
@@ -976,6 +990,7 @@ aside {
           display: none;
         }
         .owl-controls {
+          height: 40px;
           left: 0;
           position: absolute;
           transform: translateY(-50%);
@@ -1112,6 +1127,12 @@ aside {
       background-color: @jiujitsu-color;
     }
   }
+  .gallery.photo .owl-carousel .owl-controls .owl-prev:after {
+    border-right-color: @jiujitsu-color;
+  }
+  .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+    border-left-color: @jiujitsu-color;
+  }
   .gallery h2 {
     background-color: @jiujitsu-color;
     &:before {
@@ -1133,6 +1154,12 @@ aside {
     .calories-spent span {
       background-color: @taekwondo-color;
     }
+  }
+  .gallery.photo .owl-carousel .owl-controls .owl-prev:after {
+    border-right-color: @taekwondo-color;
+  }
+  .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+    border-left-color: @taekwondo-color;
   }
   .gallery h2 {
     background-color: @taekwondo-color;
@@ -1156,6 +1183,12 @@ aside {
       background-color: @muaythai-color;
     }
   }
+  .gallery.photo .owl-carousel .owl-controls .owl-prev:after {
+    border-right-color: @muaythai-color;
+  }
+  .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+    border-left-color: @muaythai-color;
+  }
   .gallery h2 {
     background-color: @muaythai-color;
     &:before {
@@ -1177,6 +1210,12 @@ aside {
     .calories-spent span {
       background-color: @taefit-color;
     }
+  }
+  .gallery.photo .owl-carousel .owl-controls .owl-prev:after{
+    border-right-color: @taefit-color;
+  }
+  .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+    border-left-color: @taefit-color;
   }
   .gallery h2 {
     background-color: @taefit-color;
@@ -1200,6 +1239,12 @@ aside {
       background-color: @yoga-color;
     }
   }
+  .gallery.photo .owl-carousel .owl-controls .owl-prev:after{
+    border-right-color: @yoga-color;
+  }
+  .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+    border-left-color: @yoga-color;
+  }
   .gallery h2 {
     background-color: @yoga-color;
     &:before {
@@ -1221,6 +1266,12 @@ aside {
     .calories-spent span {
       background-color: @pilates-color;
     }
+  }
+  .gallery.photo .owl-carousel .owl-controls .owl-prev:after{
+    border-right-color: @pilates-color;
+  }
+  .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+    border-left-color: @pilates-color;
   }
   .gallery h2 {
     background-color: @pilates-color;

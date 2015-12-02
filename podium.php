@@ -15,9 +15,9 @@
 			<main class="main">
 
 				<ul class="podium">
-					<li>
+					<li class="podium-item">
 						<a href="#">
-							<h2>Podium Classe A</h2>
+							<h2><i></i>Podium Classe A</h2>
 							<div class="img-wrapper"><img src="images/carlos-ficher.jpg" alt="Carlos Ficher"></div>
 							<div class="content">
 								<time>
@@ -29,9 +29,9 @@
 							</div>
 						</a>
 					</li>
-					<li>
+					<li class="news">
 						<a href="#">
-							<h2>Noticias</h2>
+							<h2><i></i>Noticias</h2>
 							<div class="img-wrapper"><img src="images/eduardo-santoro.jpg" alt="Eduardo Santoro"></div>
 							<div class="content">
 								<time>
@@ -43,9 +43,9 @@
 							</div>
 					</a>
 					</li>
-					<li>
+					<li class="events">
 						<a href="#">
-							<h2>Eventos Classe A</h2>
+							<h2><i></i>Eventos Classe A</h2>
 							<div class="img-wrapper"><img src="images/semana-gratis.jpg" alt="Semana Gratis"></div>
 							<div class="content">
 								<time>
@@ -57,9 +57,9 @@
 							</div>
 						</a>
 					</li>
-					<li>
+					<li class="podium-item">
 						<a href="#">
-							<h2>Podium Classe A</h2>
+							<h2><i></i>Podium Classe A</h2>
 							<div class="img-wrapper"><img src="images/richard-kurumada.jpg" alt="Carlos Ficher"></div>
 							<div class="content">
 								<time>

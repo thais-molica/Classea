@@ -6,18 +6,18 @@
 }
 @font-face {
   font-family: 'icon';
-  src: url('../fonts/icomoon.eot?7bdlzk');
-  src: url('../fonts/icomoon.eot?7bdlzk#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?7bdlzk') format('truetype'), url('../fonts/icomoon.woff?7bdlzk') format('woff'), url('../fonts/icomoon.svg?7bdlzk#icomoon') format('svg');
+  src: url('../font/icomoon.eot?7bdlzk');
+  src: url('../font/icomoon.eot?7bdlzk#iefix') format('embedded-opentype'), url('../font/icomoon.ttf?7bdlzk') format('truetype'), url('../font/icomoon.woff?7bdlzk') format('woff'), url('../font/icomoon.svg?7bdlzk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 /*variables*/
-.icon-facebook:before {
-  content: "\e902";
+/*.icon-facebook:before {
+	content: "\e902";
 }
 .icon-home:before {
-  content: "\e903";
-}
+	content: "\e903";
+}*/
 .icon-twitter:before {
   content: "\e906";
 }
@@ -288,6 +288,7 @@ footer .social {
 .banner-menu ul {
   display: flex;
   height: 100%;
+  margin-left: 0.08%;
   position: absolute;
   top: 0;
   width: 100%;
@@ -450,6 +451,12 @@ aside {
   text-transform: uppercase;
   width: 47%;
 }
+.podium li.podium-item h2 i::before {
+  content: "\e905";
+}
+.podium li.news-item h2 i::before {
+  content: "\e904";
+}
 .podium li a {
   color: #4a484c;
 }
@@ -481,6 +488,18 @@ aside {
 }
 .podium li h2:after {
   right: -33px;
+}
+.podium li h2 i::before {
+  font-family: 'icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .podium li .img-wrapper {
   display: inline-block;
@@ -878,6 +897,7 @@ aside {
   display: none;
 }
 .main.modalities .gallery.photo .owl-carousel .owl-controls {
+  height: 40px;
   left: 0;
   position: absolute;
   transform: translateY(-50%);
@@ -1001,6 +1021,12 @@ aside {
 .jiu-jitsu.main.modalities .banner-menu .info .calories-spent span {
   background-color: #f98654;
 }
+.jiu-jitsu.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-prev:after {
+  border-right-color: #f98654;
+}
+.jiu-jitsu.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+  border-left-color: #f98654;
+}
 .jiu-jitsu.main.modalities .gallery h2 {
   background-color: #f98654;
 }
@@ -1018,6 +1044,12 @@ aside {
 }
 .taekwon-do.main.modalities .banner-menu .info .calories-spent span {
   background-color: #53a7b2;
+}
+.taekwon-do.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-prev:after {
+  border-right-color: #53a7b2;
+}
+.taekwon-do.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+  border-left-color: #53a7b2;
 }
 .taekwon-do.main.modalities .gallery h2 {
   background-color: #53a7b2;
@@ -1037,6 +1069,12 @@ aside {
 .muay-thai.main.modalities .banner-menu .info .calories-spent span {
   background-color: #aed24e;
 }
+.muay-thai.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-prev:after {
+  border-right-color: #aed24e;
+}
+.muay-thai.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+  border-left-color: #aed24e;
+}
 .muay-thai.main.modalities .gallery h2 {
   background-color: #aed24e;
 }
@@ -1054,6 +1092,12 @@ aside {
 }
 .taefit.main.modalities .banner-menu .info .calories-spent span {
   background-color: #a27db1;
+}
+.taefit.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-prev:after {
+  border-right-color: #a27db1;
+}
+.taefit.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+  border-left-color: #a27db1;
 }
 .taefit.main.modalities .gallery h2 {
   background-color: #a27db1;
@@ -1073,6 +1117,12 @@ aside {
 .yoga.main.modalities .banner-menu .info .calories-spent span {
   background-color: #a8777b;
 }
+.yoga.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-prev:after {
+  border-right-color: #a8777b;
+}
+.yoga.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+  border-left-color: #a8777b;
+}
 .yoga.main.modalities .gallery h2 {
   background-color: #a8777b;
 }
@@ -1090,6 +1140,12 @@ aside {
 }
 .pilates.main.modalities .banner-menu .info .calories-spent span {
   background-color: #03acec;
+}
+.pilates.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-prev:after {
+  border-right-color: #03acec;
+}
+.pilates.main.modalities .gallery.photo .owl-carousel .owl-controls .owl-next:after {
+  border-left-color: #03acec;
 }
 .pilates.main.modalities .gallery h2 {
   background-color: #03acec;
