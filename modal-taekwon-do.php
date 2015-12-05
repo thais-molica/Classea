@@ -1,4 +1,4 @@
-<div class="modal taekwon-do">
+<div class="modal taekwon-do class">
   <div class="content">
     <h2>Taekwon-do <button class="close">&times;</button></h2>
     <table class="stripped-table">

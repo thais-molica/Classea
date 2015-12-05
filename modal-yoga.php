@@ -1,4 +1,4 @@
-<div class="modal yoga">
+<div class="modal yoga class">
   <div class="content">
     <h2>Yoga <button class="close">&times;</button></h2>
     <table class="stripped-table">

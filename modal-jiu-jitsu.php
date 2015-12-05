@@ -1,4 +1,4 @@
-<div class="modal jiu-jitsu">
+<div class="modal jiu-jitsu class">
   <div class="content">
     <h2>Jiu-jitsu <button class="close">&times;</button></h2>
     <table class="stripped-table">

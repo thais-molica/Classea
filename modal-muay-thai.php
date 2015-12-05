@@ -1,4 +1,4 @@
-<div class="modal muay-thai">
+<div class="modal muay-thai class">
   <div class="content">
     <h2>Muay-thai <button class="close">&times;</button></h2>
     <table class="stripped-table">

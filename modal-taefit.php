@@ -1,4 +1,4 @@
-<div class="modal taefit">
+<div class="modal taefit class">
   <div class="content">
     <h2>Tae fit <button class="close">&times;</button></h2>
     <table class="stripped-table">

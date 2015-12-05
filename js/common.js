@@ -1,31 +1,62 @@
 
  "use strict";
 
-var modal = function () {
+ var showModal = function ( modal ) {
+
+   modal.fadeIn();
+   setTimeout( function () {
+     modal.addClass( "in" );
+    }, 3 ) ;
+
+ } ;
+
+ var closeModal = function ( modal ) {
+
+   $( ".close", modal ).on( "click", function () {
+
+     modal.removeClass( "in" );
+     setTimeout( function() {
+       modal.fadeOut();
+     }, 300 ) ;
+
+   } ) ;
+
+ } ;
+
+ var modal = function () {
 
   $( ".activate-modal" ).on( "click", function () {
 
     var target = $( this ).data( "target" ),
         modal = $( ".modal." + target );
 
-    modal.fadeIn();
-    setTimeout(function(){
-      modal.addClass( "in" );
-     }, 3);
+    showModal( modal );
+    closeModal( modal );
 
-    $( ".close", modal ).on( "click", function () {
-      modal.removeClass( "in" );
-      setTimeout(function(){
-        modal.fadeOut();
-      }, 300);
-    } ) ;
+  } ) ;
+
+}
+
+var gallery = function () {
+
+  $( ".item", ".gallery" ).on( "click", function () {
+
+    var modal = $( ".modal.gallery" ),
+        img = $( this ).find( "img" ),
+        toAppend = "<img src='" + img.data( "img" ) + "'>";
+
+    modal.find( ".to-append" ).html( toAppend );
+    showModal( modal ) ;
+    closeModal( modal );
 
   } ) ;
 
 }
 
 $( document ).ready( function () {
+
   modal();
+  gallery();
 
   $("#owl-demo").owlCarousel({
 

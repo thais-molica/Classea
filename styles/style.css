@@ -638,6 +638,10 @@ aside {
 .modal.pilates .content {
   border-top: 10px solid #03acec;
 }
+.modal img {
+  display: block;
+  margin: 0 auto;
+}
 /*------CONTATO----------*/
 .contact {
   position: relative;
@@ -977,6 +981,7 @@ aside {
   margin: 10px 8px;
 }
 #owl-demo .item {
+  cursor: pointer;
   margin: 3px;
 }
 #owl-demo .item img {

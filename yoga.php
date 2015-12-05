@@ -19,7 +19,7 @@
 						<img src="images/jiu-jitsu.jpg">
 						<div class="info">
 						<h1>Yoga</h1>
-						<button class="activate-modal" data-target="yoga">Grade de aulas</button>
+						<button class="activate-modal" data-target="class">Grade de aulas</button>
 						<div class="box">
 							<div class="column">
 								<h2>LOREM IPSUM DOLOR IS EFECT</h2>
@@ -53,15 +53,33 @@
 					<h2>Galeria de <strong>Imagens</strong></h2>
 					<ul id="owl-demo" class="content">
 
-						<li class="item"><img src="images/galeria/jiu-jitsu1.png" alt="Jiu-Jitsu 1"></li>
-					  <li class="item"><img src="images/galeria/jiu-jitsu2.png" alt="Jiu-Jitsu 2"></li>
-					  <li class="item"><img src="images/galeria/jiu-jitsu3.png" alt="Jiu-Jitsu 3"></li>
-						<li class="item"><img src="images/galeria/jiu-jitsu1.png" alt="Jiu-Jitsu 1"></li>
-						<li class="item"><img src="images/galeria/jiu-jitsu2.png" alt="Jiu-Jitsu 2"></li>
-						<li class="item"><img src="images/galeria/jiu-jitsu3.png" alt="Jiu-Jitsu 3"></li>
-						<li class="item"><img src="images/galeria/jiu-jitsu1.png" alt="Jiu-Jitsu 1"></li>
-					  <li class="item"><img src="images/galeria/jiu-jitsu2.png" alt="Jiu-Jitsu 2"></li>
-					  <li class="item"><img src="images/galeria/jiu-jitsu3.png" alt="Jiu-Jitsu 3"></li>
+						<li class="item">
+							<img src="images/galeria/jiu-jitsu1.png" alt="Jiu-Jitsu 1" data-sequence="1" data-img="images/galeria/jiu-jitsu1.png">
+						</li>
+					  <li class="item">
+							<img src="images/galeria/jiu-jitsu2.png" alt="Jiu-Jitsu 2" data-sequence="2" data-img="images/galeria/jiu-jitsu1.png">
+						</li>
+					  <li class="item">
+							<img src="images/galeria/jiu-jitsu3.png" alt="Jiu-Jitsu 3" data-sequence="3" data-img="images/galeria/jiu-jitsu1.png">
+						</li>
+						<li class="item">
+							<img src="images/galeria/jiu-jitsu1.png" alt="Jiu-Jitsu 1" data-sequence="4" data-img="images/galeria/jiu-jitsu1.png">
+						</li>
+						<li class="item">
+							<img src="images/galeria/jiu-jitsu2.png" alt="Jiu-Jitsu 2" data-sequence="5" data-img="images/galeria/jiu-jitsu1.png">
+						</li>
+						<li class="item">
+							<img src="images/galeria/jiu-jitsu3.png" alt="Jiu-Jitsu 3" data-sequence="6" data-img="images/galeria/jiu-jitsu1.png">
+						</li>
+						<li class="item">
+							<img src="images/galeria/jiu-jitsu1.png" alt="Jiu-Jitsu 1" data-sequence="7" data-img="images/galeria/jiu-jitsu1.png">
+						</li>
+					  <li class="item">
+							<img src="images/galeria/jiu-jitsu2.png" alt="Jiu-Jitsu 2" data-sequence="8" data-img="images/galeria/jiu-jitsu1.png">
+						</li>
+					  <li class="item">
+							<img src="images/galeria/jiu-jitsu3.png" alt="Jiu-Jitsu 3" data-sequence="9" data-img="images/galeria/jiu-jitsu1.png">
+						</li>
 
 					</ul>
 				</section>
@@ -124,6 +142,10 @@
 			<?php include 'footer.php'; ?>
 		</div>
 
-		<?php include 'modal-yoga.php'; ?>
+		<?php
+			$class = "yoga";
+			include 'modal-yoga.php';
+			include 'modal-gallery.php';
+		?>
 	</body>
 </html>

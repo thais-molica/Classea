@@ -1,4 +1,4 @@
-<div class="modal pilates">
+<div class="modal pilates class">
   <div class="content">
     <h2>Pilates <button class="close">&times;</button></h2>
     <table class="stripped-table">
