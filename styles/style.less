@@ -542,8 +542,17 @@ aside {
       }
     }
     &.news-item {
+      h2 i {
+          top: 5px;
+          &::before {
+            content: @news-icon;
+            font-size: 20px;
+          }
+      }
+    }
+    &.events-item {
       h2 i::before {
-        content: @news-icon;
+        content: @events-icon;
       }
     }
     a {
@@ -556,29 +565,35 @@ aside {
       background: @primary-color;
       font-size: 18px;
       margin: -50px auto 20px;
-      padding: 5px;
+      padding: 5px 5px 5px 30px;
       position: relative;
       text-align: center;
       width: 50%;
       &:before,
       &:after {
-        border: 33px solid transparent;
-        border-bottom: 31px solid @primary-color;
+        border: 37px solid transparent;
+        border-bottom: 32px solid @primary-color;
         color: @primary-color;
         content: "";
         height: 0;
         position: absolute;
-        top: -33px;
+        top: -37px;
         width: 0;
       }
       &:before {
-        left: -33px;
+        left: -37px;
       }
       &:after {
-        right: -33px;
+        right: -37px;
       }
-      i::before {
-        .font-icon();
+      i {
+        position: absolute;
+        top: 0;
+        margin-left: -30px;
+        &::before {
+          .font-icon();
+          font-size: 30px;
+        }
       }
     }
     .img-wrapper {
@@ -699,7 +714,7 @@ aside {
     }
   }
   &.in .content {
-    margin: 10% auto;
+    margin: 10% auto; 
   }
   &.taekwon-do .content {
     border-top: 10px solid @taekwondo-color;

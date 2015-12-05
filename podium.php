@@ -29,7 +29,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="news">
+					<li class="news-item">
 						<a href="#">
 							<h2><i></i>Noticias</h2>
 							<div class="img-wrapper"><img src="images/eduardo-santoro.jpg" alt="Eduardo Santoro"></div>
@@ -41,9 +41,9 @@
 								<p>Entrevista exclusiva com Eduardo Santoro (Portuga)</p>
 								<a href="#" class="btn">Leia mais</a>
 							</div>
-					</a>
+						</a>
 					</li>
-					<li class="events">
+					<li class="events-item">
 						<a href="#">
 							<h2><i></i>Eventos Classe A</h2>
 							<div class="img-wrapper"><img src="images/semana-gratis.jpg" alt="Semana Gratis"></div>

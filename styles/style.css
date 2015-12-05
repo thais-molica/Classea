@@ -454,8 +454,15 @@ aside {
 .podium li.podium-item h2 i::before {
   content: "\e905";
 }
+.podium li.news-item h2 i {
+  top: 5px;
+}
 .podium li.news-item h2 i::before {
   content: "\e904";
+  font-size: 20px;
+}
+.podium li.events-item h2 i::before {
+  content: "\e901";
 }
 .podium li a {
   color: #4a484c;
@@ -467,27 +474,32 @@ aside {
   background: #c8c6c8;
   font-size: 18px;
   margin: -50px auto 20px;
-  padding: 5px;
+  padding: 5px 5px 5px 30px;
   position: relative;
   text-align: center;
   width: 50%;
 }
 .podium li h2:before,
 .podium li h2:after {
-  border: 33px solid transparent;
-  border-bottom: 31px solid #c8c6c8;
+  border: 37px solid transparent;
+  border-bottom: 32px solid #c8c6c8;
   color: #c8c6c8;
   content: "";
   height: 0;
   position: absolute;
-  top: -33px;
+  top: -37px;
   width: 0;
 }
 .podium li h2:before {
-  left: -33px;
+  left: -37px;
 }
 .podium li h2:after {
-  right: -33px;
+  right: -37px;
+}
+.podium li h2 i {
+  position: absolute;
+  top: 0;
+  margin-left: -30px;
 }
 .podium li h2 i::before {
   font-family: 'icon' !important;
@@ -500,6 +512,7 @@ aside {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 30px;
 }
 .podium li .img-wrapper {
   display: inline-block;
