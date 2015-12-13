@@ -345,17 +345,17 @@ footer {
 
     }
   }
-  ul {
+  >ul {
     display: flex;
     height: 100%;
-    margin-left: 0.08%;
+    margin-left: 0.1%;
     position: absolute;
     top: 0;
     width: 100%;
     li {
       bottom: -88%;
       flex: 1;
-      margin-right: -.2%;
+      //margin-right: -.2%;
       pointer-events: none;
       position: relative;
       &:before {
@@ -714,7 +714,7 @@ aside {
     }
   }
   &.in .content {
-    margin: 10% auto; 
+    margin: 10% auto;
   }
   &.taekwon-do .content {
     border-top: 10px solid @taekwondo-color;
@@ -879,7 +879,7 @@ aside {
 /*-----MODALIDADES-------*/
 .main.modalities {
   .banner-menu {
-    ul {
+    >ul {
       height: auto;
       li:before {
         display: none;
@@ -934,6 +934,7 @@ aside {
       }
       .calories-spent {
         color: @invert-color;
+        ul,
         span {
           background: url("@{img}sprite.png") no-repeat;
           display: inline-block;
@@ -941,8 +942,19 @@ aside {
           height: 80px;
           margin-bottom: 20px;
           padding: 10px 20px 10px 70px;
+          position: relative;
           text-align: center;
           width: 45%;
+          li {
+            display: none;
+          }
+          .active {
+            display: block;
+            margin-left: 20px;
+            pointer-events: none;
+            position: absolute;
+            top: 10px;
+          }
           em {
             display: block;
             font-style: normal;
@@ -951,6 +963,9 @@ aside {
         }
         .time {
           background-position: 0 -44px;
+          li {
+            cursor: pointer;
+          }
         }
         .calories {
           background-position: 0 -163px;
@@ -1110,7 +1125,7 @@ aside {
     padding: 5px 10px;
     text-transform: uppercase;
   }
-  ul{
+  ul {
     li {
       background: #464646;
       margin: 0 0 0 4.6%;
@@ -1142,6 +1157,7 @@ aside {
         background: lighten(@jiujitsu-color, 5);
       }
     }
+    .calories-spent ul,
     .calories-spent span {
       background-color: @jiujitsu-color;
     }
@@ -1170,6 +1186,7 @@ aside {
         background: lighten(@taekwondo-color, 5);
       }
     }
+    .calories-spent ul,
     .calories-spent span {
       background-color: @taekwondo-color;
     }
@@ -1198,6 +1215,7 @@ aside {
         background: lighten(@muaythai-color, 5);
       }
     }
+    .calories-spent ul,
     .calories-spent span {
       background-color: @muaythai-color;
     }
@@ -1226,6 +1244,7 @@ aside {
         background: lighten(@taefit-color, 5);
       }
     }
+    .calories-spent ul,
     .calories-spent span {
       background-color: @taefit-color;
     }
@@ -1254,6 +1273,7 @@ aside {
         background: lighten(@yoga-color, 5);
       }
     }
+    .calories-spent ul,
     .calories-spent span {
       background-color: @yoga-color;
     }
@@ -1282,6 +1302,7 @@ aside {
         background: lighten(@pilates-color, 5);
       }
     }
+    .calories-spent ul,
     .calories-spent span {
       background-color: @pilates-color;
     }

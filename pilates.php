@@ -35,8 +35,21 @@
 							<div class="column">
 								<h2>CALORIAS GASTA COM Pilates</h2>
 								<div class="calories-spent">
-									<span class="time"><em>60</em> minutos</span>
-									<span class="calories"><em>720</em> Kall/h</span>
+									<span class="time">
+										<select>
+											<option>30</option>
+											<option>60</option>
+											<option>90</option>
+											<option>120</option>
+										</select>
+										minutos
+									</span>
+									<ul class="calories">
+										<li data-val="30" class="active"><em>360</em> Kall/h</li>
+										<li data-val="60"><em>720</em> Kall/h</li>
+										<li data-val="90"><em>1180</em> Kall/h</li>
+										<li data-val="120"><em>1900</em> Kall/h</li>
+									</ul>
 								</div>
 								<div class="benefits">
 									<h2>BENEFÍCIOS</h2>

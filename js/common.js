@@ -55,6 +55,16 @@ var gallery = function () {
 
 $( document ).ready( function () {
 
+  $( "select", ".calories-spent" ).on( "change", function () {
+
+    var that = $( this ),
+        val = that.val();
+
+    $( ".active", ".calories-spent" ).removeClass( "active" );
+    $( "li[data-val='" + val + "']" ).addClass( "active" );
+    
+  } ) ;
+
   modal();
   gallery();
 
