@@ -51,7 +51,16 @@ var gallery = function () {
 
   } ) ;
 
-}
+} ;
+
+var tabs = function () {
+  $( "button", ".tabs" ).on( "click", function () {
+
+    $( ".active", ".tabs" ).removeClass( "active" );
+    $( this ).closest( "li" ).addClass( "active" );
+
+  } ) ;
+} ;
 
 $( document ).ready( function () {
 
@@ -62,11 +71,12 @@ $( document ).ready( function () {
 
     $( ".active", ".calories-spent" ).removeClass( "active" );
     $( "li[data-val='" + val + "']" ).addClass( "active" );
-    
+
   } ) ;
 
   modal();
   gallery();
+  tabs();
 
   $("#owl-demo").owlCarousel({
 
