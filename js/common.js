@@ -106,7 +106,7 @@ $( document ).ready( function () {
   gallery();
   tabs();
 
-  $("#owl-demo").owlCarousel({
+  $( "#owl-demo" ).owlCarousel( {
 
       items : 3,
       itemsDesktop : [1199,3],
@@ -114,7 +114,17 @@ $( document ).ready( function () {
       navigation: true,
       navigationText: false
 
-  });
+  } ) ;
+
+  $( "#owl-special" ).owlCarousel( {
+
+      items : 1,
+      itemsDesktop : [1199,1],
+      itemsDesktopSmall : [979,1],
+      navigation: true,
+      navigationText: false
+
+  } ) ;
 
   //Contato
   	/*valida��o de email*/

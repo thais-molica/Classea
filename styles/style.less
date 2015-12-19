@@ -1014,78 +1014,6 @@ aside {
     .content {
       background: #d8d8d8;
     }
-    &.photo {
-      .content {
-        padding: 10px 90px;
-      }
-      .owl-carousel {
-        .owl-pagination {
-          display: none;
-        }
-        .owl-controls {
-          height: 40px;
-          left: 0;
-          position: absolute;
-          transform: translateY(-50%);
-          top: 50%;
-          width: 100%;
-          .owl-prev {
-            background: none;
-            left: 30px;
-            position: absolute;
-            &:before {
-              border: 10px solid transparent;
-              border-right: 10px solid #d8d8d8;
-              content: "";
-              float: left;
-              height: 0;
-              left: 0;
-              position: absolute;
-              width: 0;
-              z-index: 1;
-            }
-            &:after {
-              border: 14px solid transparent;
-              border-right: 14px solid #fff;
-              content: "";
-              float: left;
-              height: 0;
-              left: -6px;
-              position: absolute;
-              top: -1px;
-              width: 0;
-            }
-          }
-          .owl-next {
-            background: none;
-            right: 30px;
-            position: absolute;
-            &:before {
-              border: 10px solid transparent;
-              border-left: 10px solid #d8d8d8;
-              content: "";
-              float: left;
-              height: 0;
-              left: 0;
-              position: absolute;
-              width: 0;
-              z-index: 1;
-            }
-            &:after {
-              border: 14px solid transparent;
-              border-left: 14px solid #fff;
-              content: "";
-              float: left;
-              height: 0;
-              right: -6px;
-              position: absolute;
-              top: -1px;
-              width: 0;
-            }
-          }
-        }
-      }
-    }
     &.video {
       h2 {
         left: -140px;
@@ -1103,6 +1031,81 @@ aside {
         li {
           float: left;
           margin: 10px 8px;
+        }
+      }
+    }
+  }
+}
+.gallery.photo {
+  .content {
+    padding: 10px 90px;
+  }
+  .owl-carousel {
+    .owl-item {
+      text-align: center;
+    }
+    .owl-pagination {
+      display: none;
+    }
+    .owl-controls {
+      height: 40px;
+      left: 0;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      width: 100%;
+      .owl-prev {
+        background: none;
+        left: 30px;
+        position: absolute;
+        &:before {
+          border: 10px solid transparent;
+          border-right: 10px solid #d8d8d8;
+          content: "";
+          float: left;
+          height: 0;
+          left: 0;
+          position: absolute;
+          width: 0;
+          z-index: 1;
+        }
+        &:after {
+          border: 14px solid transparent;
+          border-right: 14px solid #fff;
+          content: "";
+          float: left;
+          height: 0;
+          left: -6px;
+          position: absolute;
+          top: -1px;
+          width: 0;
+        }
+      }
+      .owl-next {
+        background: none;
+        right: 30px;
+        position: absolute;
+        &:before {
+          border: 10px solid transparent;
+          border-left: 10px solid #d8d8d8;
+          content: "";
+          float: left;
+          height: 0;
+          left: 0;
+          position: absolute;
+          width: 0;
+          z-index: 1;
+        }
+        &:after {
+          border: 14px solid transparent;
+          border-left: 14px solid #fff;
+          content: "";
+          float: left;
+          height: 0;
+          right: -6px;
+          position: absolute;
+          top: -1px;
+          width: 0;
         }
       }
     }
@@ -1444,5 +1447,80 @@ aside {
   text-align: center;
   h3 {
     text-transform: uppercase;
+  }
+}
+/*
+  CATEGORIAS ESPECIAIS
+    KIDS E FEMININA
+*/
+.special-category {
+  padding: 10px;
+  position: relative;
+  >img {
+    position: absolute;
+    z-index: -1;
+  }
+  h1 {
+    color: @invert-color;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  section {
+    background: rgba( 0, 0, 0, .7 );
+    color: @invert-color;
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+    width: 49%;
+    &:first-of-type {
+      margin-right: 1%;
+    }
+    h2 {
+      padding: 5px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .description {
+      display: block;
+      padding: 10px;
+    }
+  }
+}
+body.kids {
+  border-top-color: @kids-color;
+  &:before {
+    display: none;
+  }
+  .main-footer {
+    background: @kids-color;
+  }
+  h1 {
+    background: @kids-color;
+  }
+  section {
+    h2,
+    .description {
+      background: @kids-color;
+    }
+  }
+}
+body.feminina {
+  border-top-color: @feminina-color;
+  &:before {
+    display: none;
+  }
+  .main-footer {
+    background: @feminina-color;
+  }
+  h1 {
+    background: @feminina-color;
+  }
+  section {
+    h2,
+    .description {
+      background: @feminina-color;
+    }
   }
 }
