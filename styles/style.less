@@ -148,6 +148,29 @@ h1 {
     background: @primary-color;
   }
 }
+.pagination {
+  background: @primary-color;
+  padding: 5px;
+  text-align: center;
+  a {
+    color: @secondary-color;
+    display: block;
+    padding: 5px 10px;
+    &:hover {
+      background: @tertiary-color;
+      color: @invert-color;
+    }
+  }
+  h3 {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+  ul {
+    display: inline-block;
+  }
+}
 /*-------header------*/
 header {
   margin: 20px 0;
@@ -1416,6 +1439,13 @@ aside {
     }
     &:after {
       right: -37px;
+    }
+    i {
+      &::before {
+        .font-icon();
+        content: "\e905";
+        font-size: 23px;
+      }
     }
   }
   article {

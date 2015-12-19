@@ -17,7 +17,7 @@
 
 			<main class="main news">
 
-				<h1>Podium Classe A</h1>
+				<h1><i></i>Podium Classe A</h1>
 
 				<article>
 

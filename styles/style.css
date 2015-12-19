@@ -91,6 +91,29 @@ h1 {
 .stripped-table tr:nth-child(odd) td {
   background: #c8c6c8;
 }
+.pagination {
+  background: #c8c6c8;
+  padding: 5px;
+  text-align: center;
+}
+.pagination a {
+  color: #4a484c;
+  display: block;
+  padding: 5px 10px;
+}
+.pagination a:hover {
+  background: #010001;
+  color: #ffffff;
+}
+.pagination h3 {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.pagination ul {
+  display: inline-block;
+}
 /*-------header------*/
 header {
   margin: 20px 0;
@@ -1294,6 +1317,20 @@ aside {
 }
 .news h1:after {
   right: -37px;
+}
+.news h1 i::before {
+  font-family: 'icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e905";
+  font-size: 23px;
 }
 .news article {
   background: #eeedee;

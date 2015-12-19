@@ -5,7 +5,7 @@
 
 		<?php include 'assets.php'; ?>
 
-		<title>Podium - Classe A</title>
+		<title>Podium 2 - Classe A</title>
 	</head>
 	<body>
 		<div class="container">
