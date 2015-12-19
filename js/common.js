@@ -69,6 +69,27 @@ var tabs = function () {
 
 } ;
 
+var sendMail = function () {
+  window.location.href = "mailto:?subject="
+                        + document.title +
+                        "&body="+escape(window.location.href) ;
+}
+var sendFacebook = function (link, title, img) {
+    link = link != undefined ? link : window.location.href;
+    title = title != undefined ? title : document.title;
+    window.open("https://www.facebook.com/sharer/sharer.php?u=" + escape(link) + "&t=" + document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600'); return false;
+}
+var sendTwitter = function (link, title) {
+    link = link != undefined ? link : window.location.href;
+    title = title != undefined ? title : document.title;
+    window.open("http://twitter.com/home?status=" + escape(title) + " " + escape(link), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600'); return false;
+}
+var sendGPlus = function (link, title) {
+    link = link != undefined ? link : window.location.href;
+    title = title != undefined ? title : document.title;
+    window.open("https://plus.google.com/share?url=" + escape(link), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=530,width=490'); return false;
+}
+
 $( document ).ready( function () {
 
   $( "select", ".calories-spent" ).on( "change", function () {
