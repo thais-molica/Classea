@@ -12,18 +12,18 @@
 
 			<?php include 'header.php'; ?>
 
-			<main class="main">
+			<main class="main classea">
 
 				<img src="images/classe-a-bg.jpg">
 
 				<h1>Bem vindo a Classe A</h1>
 
 				<ul class="tabs">
-					<li class="active">
+					<li class="active" data-id="nossa-academia">
 						<button>Nossa Academia</button>
 						<section>Carroussel</section>
 					</li>
-					<li>
+					<li data-id="qualidade-classe-a">
 						<button>Qualidade Classe A</button>
 						<section>
 							<p>
@@ -37,7 +37,7 @@
 							</p>
 						</section>
 					</li>
-					<li>
+					<li data-id="free-pass">
 						<button>Free Pass</button>
 						<section>
 							<p>

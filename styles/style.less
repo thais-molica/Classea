@@ -1320,3 +1320,69 @@ aside {
     }
   }
 }
+/*CLASSE A*/
+.classea {
+  min-height: 700px;
+  padding: 10px 0;
+  position: relative;
+  >img {
+    position: absolute;
+    z-index: -1;
+  }
+  h1 {
+    background: rgba( 0, 0, 0, .7 );
+    color: @invert-color;
+    padding: 40px 20px;
+    text-transform: uppercase;
+  }
+  .tabs {
+    position: relative;
+  }
+  li {
+    display: block;
+  }
+  button {
+    .border-radius ( 3px );
+    background: rgba( 0, 0, 0, .7 );
+    border: 3px solid transparent;
+    color: @invert-color;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+    padding: 20px 10px;
+    position: absolute;
+    text-align: left;
+    text-transform: uppercase;
+    width: 20%;
+  }
+  section {
+    .border-radius ( 3px );
+    background: rgba( 0, 0, 0, .7 );
+    color: @invert-color;
+    display: none;
+    margin-left: 23%;
+    min-height: 520px;
+    padding: 20px;
+    vertical-align: top;
+    width: 77%;
+  }
+  [data-id="nossa-academia"] button {
+    top: 0;
+  }
+  [data-id="qualidade-classe-a"] button {
+    top: 80px;
+  }
+  [data-id="free-pass"] button {
+    top: 160px;
+  }
+  .active {
+    button {
+      border-color: @pilates-color;
+    }
+    section {
+      border: 3px solid @pilates-color;
+      display: block;
+    }
+  }
+}

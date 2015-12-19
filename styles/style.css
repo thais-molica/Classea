@@ -1194,3 +1194,71 @@ aside {
 .pilates.main.modalities .gallery h2:before {
   border-bottom-color: #03acec;
 }
+/*CLASSE A*/
+.classea {
+  min-height: 700px;
+  padding: 10px 0;
+  position: relative;
+}
+.classea > img {
+  position: absolute;
+  z-index: -1;
+}
+.classea h1 {
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 40px 20px;
+  text-transform: uppercase;
+}
+.classea .tabs {
+  position: relative;
+}
+.classea li {
+  display: block;
+}
+.classea button {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 3px solid transparent;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+  padding: 20px 10px;
+  position: absolute;
+  text-align: left;
+  text-transform: uppercase;
+  width: 20%;
+}
+.classea section {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  display: none;
+  margin-left: 23%;
+  min-height: 520px;
+  padding: 20px;
+  vertical-align: top;
+  width: 77%;
+}
+.classea [data-id="nossa-academia"] button {
+  top: 0;
+}
+.classea [data-id="qualidade-classe-a"] button {
+  top: 80px;
+}
+.classea [data-id="free-pass"] button {
+  top: 160px;
+}
+.classea .active button {
+  border-color: #03acec;
+}
+.classea .active section {
+  border: 3px solid #03acec;
+  display: block;
+}

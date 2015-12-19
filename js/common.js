@@ -54,12 +54,19 @@ var gallery = function () {
 } ;
 
 var tabs = function () {
-  $( "button", ".tabs" ).on( "click", function () {
+
+  $( "button", ".tabs" ).on( "click", function ( e ) {
+
+    e.preventDefault();
+
+    var li = $( this ).closest( "li" );
 
     $( ".active", ".tabs" ).removeClass( "active" );
-    $( this ).closest( "li" ).addClass( "active" );
+    li.addClass( "active" );
+    window.location.hash = li.attr( "data-id" );
 
   } ) ;
+
 } ;
 
 $( document ).ready( function () {
