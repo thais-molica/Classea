@@ -1355,7 +1355,7 @@ aside {
     z-index: -1;
   }
   h1 {
-    background: rgba( 0, 0, 0, .7 );
+    background: url("@{img}classea-title.png") no-repeat right center rgba( 0, 0, 0, .7 );
     color: @invert-color;
     padding: 40px 20px;
     text-transform: uppercase;
@@ -1363,8 +1363,10 @@ aside {
   .tabs {
     position: relative;
   }
-  li {
-    display: block;
+  .tab-item {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
   }
   button {
     .border-radius ( 3px );
@@ -1376,7 +1378,7 @@ aside {
     font-size: 16px;
     outline: none;
     padding: 20px 10px;
-    position: absolute;
+    pointer-events: auto;
     text-align: left;
     text-transform: uppercase;
     width: 20%;
@@ -1386,20 +1388,25 @@ aside {
     background: rgba( 0, 0, 0, .7 );
     color: @invert-color;
     display: none;
-    margin-left: 23%;
+    margin-left: 2.5%;
     min-height: 520px;
     padding: 20px;
+    pointer-events: auto;
     vertical-align: top;
     width: 77%;
+    #owl-classea img {
+      display: block;
+      margin: 0 auto 20px;
+    }
   }
-  [data-id="nossa-academia"] button {
-    top: 0;
-  }
+  /*[data-id="nossa-academia"] button {
+    margin-top: 0;
+  }*/
   [data-id="qualidade-classe-a"] button {
-    top: 80px;
+    margin-top: 80px;
   }
   [data-id="free-pass"] button {
-    top: 160px;
+    margin-top: 160px;
   }
   .active {
     button {
@@ -1407,7 +1414,7 @@ aside {
     }
     section {
       border: 3px solid @pilates-color;
-      display: block;
+      display: inline-block;
     }
   }
 }
@@ -1465,11 +1472,15 @@ aside {
       }
     }
     h2 {
+      font-weight: bold;
       text-transform: uppercase;
     }
     img {
       display: block;
       margin: 30px auto;
+    }
+    p {
+      font: 15px Arial, sans-serif;
     }
   }
 }
@@ -1478,7 +1489,27 @@ aside {
 .social-bar {
   text-align: center;
   h3 {
+    font-size: 20px;
     text-transform: uppercase;
+  }
+  li button {
+    background: url("@{img}social-bar.jpg") no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 33px;
+    width: 99px;
+  }
+  .mail button {
+    background-position: 0 0;
+  }
+  .facebook button {
+    background-position: -106px 0;
+  }
+  .twitter button {
+    background-position: -212px 0;
+  }
+  .gplus button {
+    background-position: -319px 0;
   }
 }
 /*

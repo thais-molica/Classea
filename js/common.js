@@ -126,6 +126,14 @@ $( document ).ready( function () {
 
   } ) ;
 
+  $( "#owl-classea").owlCarousel( {
+
+      items : 2,
+      navigation: true,
+      navigationText: false
+
+  } ) ;
+
   //Contato
   	/*valida��o de email*/
   	$( "#send-btn", "#contact-form" ).click( function() {
