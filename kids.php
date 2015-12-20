@@ -13,7 +13,7 @@
 			<?php include 'header.php'; ?>
 
 			<main class="main special-category">
-				<img src="images/classe-a-bg.jpg">
+				<img src="images/kids-bg.jpg">
 				<h1>Kids</h1>
 				<section class="gallery photo">
 					<h2>Galeria Kids</h2>
