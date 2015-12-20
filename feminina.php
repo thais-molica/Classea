@@ -13,10 +13,10 @@
 			<?php include 'header.php'; ?>
 
 			<main class="main special-category">
-				<img src="images/classe-a-bg.jpg">
+				<img src="images/feminina-bg.jpg">
 				<h1>Kids</h1>
 				<section class="gallery photo">
-					<h2>Galeria Feminino</h2>
+					<h2>Galeria <strong>Feminino</strong></h2>
 					<ul id="owl-special" class="content">
 
 						<li class="item">
@@ -52,7 +52,7 @@
 					<span class="description">Nosso espaco exclusivo para lutas femininas, confira nossa galeria com fotos exclusivas</span>
 				</section>
 				<section>
-					<h2>FEMININO Classe A, o melhor</h2>
+					<h2><strong>Feminino</strong> Classe A, o melhor</h2>
 					<p>
 						Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos,
 						e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja
